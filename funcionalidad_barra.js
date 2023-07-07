@@ -427,15 +427,30 @@ function listar(archivos2){
 			zonadatos3.innerHTML+=archivos2[i].name+"<br>";
 		}else if(archivos2[i].isDirectory){
 
-			zonadatos3.innerHTML+="<span class='directorio'>" + archivos2[i].name + "</span><br>";
+			zonadatos3.innerHTML+="<span onclick='cambiardir(\"" + archivos2[i].name + "\)' class='directorio'>" +archivos2[i].name + "</span><br>";
 		}
 	}
+}
+cambiardir(nuevaruta){
+	ruta=ruta+nuevaruta +"/";
+	mostrar2();
+}
+
+function volver(){
+	espacio.getDirectory(ruta,null,function(dir_actual){
+		dir_actual.getParent(function(dir_padre){
+			ruta=dir_padre.fullPath;
+			mostrar2();
+		},errores);
+	},errores);
 }
 
 function errores(e){
 	alert("Ha Habido un error: " + e.code);
 	
 }
+
+
 
 window.addEventListener("load", CreandoArch, false);
 
