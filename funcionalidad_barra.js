@@ -415,10 +415,10 @@ function leerdir(dir){
 
 function leer(){
 	lector2.readEntries(function(archivos2){
-					   if(archivos2.length){
+	if(archivos2.length){
 		listar(archivos2);
 	}
-					   }, errores);
+ }, errores);
 }
 
 function listar(archivos2){
@@ -426,6 +426,7 @@ function listar(archivos2){
 		if(archivos2[i].isFile){
 			zonadatos3.innerHTML+=archivos2[i].name+"<br>";
 		}else if(archivos2[i].isDirectory){
+
 			zonadatos3.innerHTML+="<span class='directorio'>" + archivos2[i].name + "</span><br>";
 		}
 	}
