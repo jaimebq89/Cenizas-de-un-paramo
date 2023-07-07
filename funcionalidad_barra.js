@@ -431,7 +431,7 @@ function listar(archivos2){
 		}
 	}
 }
-cambiardir(nuevaruta){
+function cambiardir(nuevaruta){
 	ruta=ruta+nuevaruta +"/";
 	mostrar2();
 }
