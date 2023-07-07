@@ -427,7 +427,7 @@ function listar(archivos2){
 			zonadatos3.innerHTML+=archivos2[i].name+"<br>";
 		}else if(archivos2[i].isDirectory){
 
-			zonadatos3.innerHTML+="<span onclick='cambiardir(\"" + archivos2[i].name + "\)' class='directorio'>" +archivos2[i].name + "</span><br>";
+			zonadatos3.innerHTML+="<span onclick='cambiardir(\"" + archivos2[i].name + "\")' class='directorio'>" +archivos2[i].name + "</span><br>";
 		}
 	}
 }
