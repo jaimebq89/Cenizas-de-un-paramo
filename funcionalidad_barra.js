@@ -73,7 +73,7 @@ function iniciar(){
 	
 	edad=document.getElementById("edad");
 	edad.addEventListener("change", cambia_rango, false);
-	document.formulario.addEventListener("invalid",validar,true);
+	document.formulario.addEventListener("invalid", validar, false);
 	document.getElementById("Enviar").addEventListener("click",enviar,false);
 	document.formulario.addEventListener("input",validar_tiempo_real,false);
 }
