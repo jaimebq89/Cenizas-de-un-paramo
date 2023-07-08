@@ -379,7 +379,7 @@ window.addEventListener("load",guardarBD,false);
 function CreandoArch(){
 	zonadatos3=document.getElementById("zonadatos3");
 	var boton=document.getElementById("boton");
-	boton.addEventListener("click", crear, false);
+	boton.addEventListener("click", modificar, false);
 	
 	navigator.webkitPersistentStorage.requestQuota(5*1024*1024, acceso);
 	
@@ -390,6 +390,18 @@ function acceso(){
 function crearsis(sistema){
 	espacio=sistema.root;
 	ruta="";
+	mostrar2();
+}
+
+function modificar(){
+	var origen=document.getElementById("origen").value;
+	var destino=document.getElementById("destino").value;
+	espacio.getFile(origen, null, function(archivo){espacio.getDirectory(destino,null,function(directorio){archivos2.moveTo(directorio,null,exito,errores);},errores);},errores);
+}
+
+function exito(){
+	document.getElementById("origen").value="";
+	document.getElementById("destino").value="";
 	mostrar2();
 }
 
