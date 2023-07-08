@@ -379,7 +379,9 @@ window.addEventListener("load",guardarBD,false);
 function CreandoArch(){
 	zonadatos3=document.getElementById("zonadatos3");
 	var boton=document.getElementById("boton");
+	var boton2=document.getElementById("boton2");
 	boton.addEventListener("click", modificar, false);
+	boton2.addEventListener("click", crear, false);
 	
 	navigator.webkitPersistentStorage.requestQuota(5*1024*1024, acceso);
 	
