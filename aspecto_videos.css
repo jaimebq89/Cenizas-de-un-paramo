@@ -74,7 +74,7 @@
 	height: 70px;
 	width:720px;
 	margin: 20 px auto;
-	background: #600DD5;
+	background:#1389C3;
 	padding: 5px;
 	border: 2px solid #F8070B;
 	border-radius: 0 0 0 32px;
@@ -83,7 +83,7 @@
 #imagenes{
 	width: 450px;
 	margin: 10px;
-	background: #F8070B;
+        background:#1389C3;
 	padding: 20px;
 	border: 10px solid #1FD1A8;
 	border-radius: 64px 48px 16px 96px;
@@ -156,7 +156,7 @@ nav{
 }
 
 .directorio{
-	color:#0000FF;
+	color: #1389C3;
 	font-weight: bold;
 	cursor:pointer;
 }
