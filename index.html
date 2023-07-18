@@ -1,142 +1,218 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<!-- Hi, this is a template free, please suscribe to my chanel
+AlexCG Design, Thank you, I hope this template helps you -->
 <head>
-<meta charset="utf-8">
-<title>Cenizas de un páramo</title>
-<link rel="stylesheet" href="aspecto_videos.css">
-<script src="funcionalidad_barra.js" ></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Página web completa</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
 </head>
-<body>
-	<section id="dibujo">
-			<canvas width="720" height="280" id="lienzo">
-			</canvas>
-	</section>
-	<section id="video"> 
-		<p>Cenizas de un páramo<br><br> Banda de Rionegro, Hardcore Melódico<br>Bandi: Guitarra y voz<br>Vladi: Guitarra y voz<br>Jimy: Bajo y voz<br>Jose: Batería<br><br> Desde 2020 en época de pandemia nació un proyecto musical para combatir la monotonía de los dias de cuarentena y se involucran temas sobre la tierra, los rios, la fauna silvestre, la destrucción del mundo natural por dinero, el capital....<br> Cenizas de un páramo ha participado en 3 eventos culturales y musicales en 2022 y 2023 en el municipio de Rionegro: Barrio El Porvenir Plazoleta la Mota, Insomnia Bar, La Juguería. <br></p>
-		<video id="mivideo" width="720" height="520" poster="imagenes/paisaje_nieve.jpg">
-		<source src="imagenes/VID_26411204_180041_387.mp4"></video>
-			<nav>
-			<div id="botones">
-			<button type="button" id="reproducir">play </button>	
-			</div>	
-			<div id="barra">
-			<div id="progreso"></div>
-			</div>	
-			</nav>
-		<p>tracklist demo/live: 2022 instrumental rec.</p>
-		<p><br>intro</p>
-		<p>mancha</p>
-		<p>sobre la tierra</p>
-		<p>desequilibrio </p>
-	
-		</section>	
-	
-	<section id="audio">
-		
-		<audio id="miaudio">
-		<source src="Cenizas de un paramo/band.live sesion.mp3"></audio>
-			<nav>
-			<div id="botones2">
-			<button type="button2" id="reproducir2">play </button>
-			</div>
-			<div id="barra2">
-			<div id="progreso2"></div>
-			</div>
-			</nav>
-		</section>
-	
-		
 
-	<section id="imagenes">
-	<p><img src="imagenes/1.jpeg" width="200" height="200" id="imagen1">&nbsp;&nbsp;<img src="imagenes/2.jpeg" width="200" height="200" id="imagen2">&nbsp;&nbsp;<img src="imagenes/3.jpeg" width="200" height="200" id="imagen3">&nbsp;&nbsp;<img src="imagenes/4.jpeg" width="200" height="200" id="imagen4">&nbsp;&nbsp;<img src="imagenes/5.jpeg" width="200" height="200" id="imagen5">;<img src="imagenes/6.jpeg" width="200" height="200" id="imagen6"></p>	
+<body class="hidden">
+    <div class="centrado" id="onload">
+        <div class="lds-facebook"><div></div><div></div><div></div></div>
+    </div>
+    <header>
+        <nav id="nav" class="nav1">
+            <div class="contenedor-nav">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="enlaces" id="enlaces">
+                    <a href="#" id="enlace-inicio" class="btn-header">Inicio</a>
+                    <a href="#" id="enlace-equipo" class="btn-header">Nuestra banda</a>
+                    <a href="#" id="enlace-servicio" class="btn-header">Sobre nosotros</a>
+                    <a href="#" id="enlace-trabajo" class="btn-header">Fotos</a>
+                    <a href="#" id="enlace-contacto" class="btn-header">Contacto</a>
+                </div>
+                <div class="icono" id="open">
+                    <span>&#9776;</span>
+                </div>
+            </div>
+        </nav>
+        <div class="textos">
+            <h1>Hardcore Melódico</h1>
+            <h2>Cenizas de un páramo</h2>
+        </div>
+    </header>
+    <main>
+        <section class="team contenedor" id="equipo">
+            <h3>Nuestra Banda</h3>
+            <p class="after">		
+			<p>Cenizas de un páramo<br><br> Banda de Rionegro, Hardcore Melódico<br>Bandi: <br>Vladi: Guitarra y voz<br>Jimy: Bajo y voz<br>Jose: Batería<br><br> Desde 2020 en época de pandemia nació un proyecto musical para combatir la monotonía de los dias de cuarentena y se involucran temas sobre la tierra, los rios, la fauna silvestre, la destrucción del mundo natural por dinero, el capital....<br> Cenizas de un páramo ha participado en 3 eventos culturales y musicales en 2022 y 2023 en el municipio de Rionegro:<br><br></p></p>
+            <div class="card">
+                <div class="content-card">
+                    <div class="people">
+                        <img src="img/people1.jpeg" alt="">
+                    </div>
+                    <div class="texto-team">
+                        <h4>Barrio El Porvenir Plazoleta la Mota</h4>
+                        <p>26 Marzo, 2022</p>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="people">
+                        <img src="img/people2.jpeg" alt="">
+                    </div>
+                    <div class="texto-team">
+                        <h4>Insomnia Bar.</h4>
+                        <p>29 Octubre, 2022</p>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="people">
+                        <img src="img/people3.jpeg" alt="">
+                    </div>
+                    <div class="texto-team">
+                        <h4>La Juguería</h4>
+                        <p>1 Julio, 2023</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="servicio">
+            <div class="contenedor">
+                <h3>Sombras de un pasado</h3>
+                <p class="after">nos sumerge en el miedo nos controla por los ego buscando respuesta</p>
+                <div class="servicios">
+                    <div class="caja-servicios">
+                        <img src="img/heart.png" alt="">
+                        <h4>Aires  que vuelven, refrescan el páramo,</h4>
+                        <p>vuelve y llueve</p>
+                    </div>
+                    <div class="caja-servicios">
+                        <img src="img/responsive.png" alt="">
+                        <h4>arde fluye dentro de mi</h4>
+                        <p>borregos de una moral que nos nos pertenece.</p>
+                    </div>
+                    <div class="caja-servicios">
+                        <img src="img/efectos.png" alt="">
+                        <h4>sombras de un pasado, que no desaparece</h4>
+                        <p>inmersos en la oscuridad la ilusión desaparece</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="work contenedor" id="trabajo">
+            <h3>Alma de la tierra</h3>
+            <p class="after">me sofocan  me silencias es largo este camino deje miles de huellas </p>
+            <div class="botones-work">
+                <ul>
+                    <li class="filter active" data-nombre='todos'>Todos</li>
+                    <li class="filter" data-nombre='diseño'>Bosquejos</li>
+                    <li class="filter" data-nombre='programacion'>Alma de la tierra</li>
+                    <li class="filter" data-nombre='marketing'>Eventos</li>
+                </ul>
+            </div>
+            <div class="galeria-work">
+                <div class="cont-work programacion">
+                    <div class="img-work">
+                        <img src="img/programacion1.jpeg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>si la flor que arde esciende todo al paso</h4>
+                    </div>
+                </div>
+                <div class="cont-work programacion">
+                    <div class="img-work">
+                        <img src="img/programacion2.jpeg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>el alma a la tierra vuelve</h4>
+                    </div>
+                </div>
+                <div class="cont-work programacion">
+                    <div class="img-work">
+                        <img src="img/programacion3.jpeg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>respirando retornos se aleja el humo</h4>
+                    </div>
+                </div>
+                <div class="cont-work diseño">
+                    <div class="img-work">
+                        <img src="img/diseño1.jpeg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Mancha</h4>
+                    </div>
+                </div>
+                <div class="cont-work diseño">
+                    <div class="img-work">
+                        <img src="img/diseño2.jpeg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Ahora</h4>
+                    </div>
+                </div>
+                <div class="cont-work diseño">
+                    <div class="img-work">
+                        <img src="img/diseño3.jpeg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Melodrama</h4>
+                    </div>
+                </div>
+                <div class="cont-work marketing">
+                    <div class="img-work">
+                        <img src="img/marketing1.jpeg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Disaster</h4>
+                    </div>
+                </div>
+                <div class="cont-work marketing">
+                    <div class="img-work">
+                        <img src="img/marketing2.jpeg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Desequilibrio</h4>
+                    </div>
+                </div>
+                <div class="cont-work marketing">
+                    <div class="img-work">
+                        <img src="img/marketing3.jpeg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Vuela el carpintero</h4>
+                    </div>
+                </div>
+            </div>
+			<section id="audio">
+	<audio id="miaudio">
+	<source src="Cenizas de un paramo/band.live sesion.mp3"></audio>
+<!--		<nav>
+		<div id="botones2">
+		<button type="button2" id="reproducir2">play </button>
+		</div>
+		<div id="barra2">
+		<div id="progreso2"></div>
+		</div>
+		</nav>-->
 	</section>
-
-
-		
-	<section id="zonadestino">
-		Actualmente temas de la banda:
-<br>
-		<br>1. intro
-		<br>2. mancha
-		<br> 3. ahora
-		<br> 4. sobre la tierra
-		<br> 5. disaster
-		<br> 6. alma a la tierra
-		<br> 7. desequilibrio
-		<br> 8. melodrama
-		<br> 9. vuela el carpintero
-		<br> 10. grindcore set
-		<br><p>alma de la tierra: <br>si la flor que arde esciende todo al paso, <br> el alma a la tierra vuelve<br> respirando retornos se aleja el humo <br>Aires  que vuelven, refrescan el páramo, vuelve y llueve<br> arde! fluye! todo se quema dentro de mi<br> arde fluye dentro de mi</p>
-		<p>DISASTER: <br>sombras de un pasado, que no desaparece,<br> inmersos en la oscuridad la ilusión desaparece,  borregos de una moral que nos nos pertenece, <br> nos sumerge en el miedo nos controla por los ego buscando respuesta,<br> me sofocan  me silencias es largo este camino deje miles de huellas <br>y aun no veo el horizonte x4</p>
-		
-	</section>
-
+        </section>
 	
-	<section id="formulario2">
-	<form name="registrar_usuario" method="get" id="formulario">
-	<table><tr><td>
-	Usuario:</td><td><input type="text" name="usuario" id="usuario"></td></tr>
-	<tr><td>
-	Email:</td><td><input type="email" name="email" id="email"></td></tr>	
-	<tr><td>
-	Edad:</td><td><input type="range" name="edad" id="edad" min="0" max="120" value="30"></td></tr>
-	<tr><td>
-	<output id="rango">0 a 30</output>
-	</td></tr>
-	<tr><td>
-	<input type="submit" id="Enviar" value="Registrar">
-	<p>Archivo: <input type="text" name ="entrada" id="entrada"></p>
-	<p>Archivo a mover: <input type="text" name="origen" id="origen" required></p>
-	<p>Directorio destino:<br><input type="text" name="destino" id="destino" required></p>	
-	<p><input type="button" id="boton" value="Aceptar">&nbsp;
-	<p><input type="button" id="boton2" value="Crear">&nbsp;
-	<input type="button" value="Volver" onClick="volver()"> </p>	
-	</td></tr>
-	</table>
-	</form>
-					
-	</section>
-		
-	<section id="ubicacion">
-	
-		<button id="ubicacion"> Dame mi ubicacion  </button>
-		
-	</section>
-	<section id="zonadatos3">				 
-			
-			No Hay informacion FILE
-		
-	</section>
+    </main>
+    <footer id="contacto">
+        <div class="footer contenedor">
+            <div class="marca-logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="iconos">
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-github"></i>
+            </div>
+            <p>La pasión sobre la tierra, inmersos en la oscuridad la ilusión desaparece</p>
+        </div>
 
-		<section id="zonadatos2">				 
-			
-			No Hay informacion
-		
-		</section>	
-	<section id="zonadestino2">
-		
-		Arrastre los archivos hasta aquí
-			
-		</section>
-	
-	<div id="contenedor">
-		<section id="zonaformulario">
-		<form name="miformulario">
-			<p> Clave: <br><input type="text" name="clave" id="clave"></p>
-			<p> Titulo: <br><input type="text" name="texto" id="texto"></p>
-			<p> Año: <br><input type="text" name="fecha" id="fecha"></p>
-			<p> Valor: <br><textarea id="valor"></textarea></p>
-			<p><input type="button" id="grabar" value="Grabar"></p>
-		</form>
-		</section>
-		<section id="zonadatos">				 
-			
-			Futuros datos
-		
-		</section>
-	</div>
-
-	
-	
-	</body>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/filtro.js"></script>
+</body>
 </html>
