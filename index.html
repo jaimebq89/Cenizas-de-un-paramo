@@ -186,10 +186,15 @@
                 </div>
             </div>
 	</section>	
-	<section id="audio">
+	<section id="player">
 	<audio id="miaudio">
 	<source src="Cenizas de un paramo/bandi.wav"></audio>
-		<audio><source src="Cenizas de un paramo/band.live session.mp4"></audio>
+	<audio><source src="Cenizas de un paramo/band.live session.mp4"></audio>
+	<div>
+    <button onclick="document.getElementById('player').play()">Play</button>
+    <button onclick="document.getElementById('player').pause()">Pausa</button>
+    <button onclick="document.getElementById('player').load()">Stop</button>
+		</div>	
 	</section>
         
 	
