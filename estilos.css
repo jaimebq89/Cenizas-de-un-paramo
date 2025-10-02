@@ -1,5 +1,5 @@
 :root{
-  --color1: rgb(219,144,.5);
+  --color1: rgb(17,11,1);
   --color2: rgba(23, 180, 83, 0.877);
   --color3: rgba(11,194,211, 0.623);
   --fondo: #f2f2f2;
@@ -443,4 +443,5 @@ footer p{
   .iconos{
     margin: auto;
   }
+
 }
